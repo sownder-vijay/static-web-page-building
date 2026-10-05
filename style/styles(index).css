@@ -22,6 +22,7 @@ a:hover{
     justify-content: space-evenly;
     align-items: center;
     padding: 0px 32px;
+    box-shadow: 4px 2px 5px 6px #ded6ca;
 }
 .logo-img{
     border-radius: 30px;
@@ -64,6 +65,9 @@ a:hover{
     font-size: 13px;
 }
 .get-started{
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: 200;
     padding: 11px 12px;
     align-items: center;
     background-color: #2c563ae0;
@@ -71,5 +75,81 @@ a:hover{
     transition: all 0.3s ease;
 }
 .get-started:hover{
-    padding: 12px 14px;
+    /* padding: 12px 14px; */
+    transform: scale(1.06)
+}
+.Home-title{
+    margin-top: 25px;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 700px;
+    box-shadow: 0px 2px 2px 2px rgba(231, 171, 171, 0.669);
+    border-radius: 10px;
+}
+.Home-title{
+    background-color: rgba(218, 185, 185, 0.445);
+    font-family: Readex Pro;
+    color: rgba(145, 71, 71, 0.975);
+    transition: all 0.3s ease;
+}
+.Home-title h1{
+    color: rgba(137, 82, 58, 0.886);
+    font-size: 60px;
+}
+.Home-title h2{
+    font-size: 40px;
+}
+.Home-title p{
+    padding-top: 2px;
+    padding-left: 8px;
+    color: rgba(198, 93, 48, 0.667);
+    line-height: 1.5;
+
+}
+.home-icons{
+    display: flex;
+    transition: all 0.3s ease;
+}
+.clock{
+    background-color: rosybrown;
+    padding: 15px 20px;
+    border: 8px solid;
+    border-radius: 100%;
+    border-color: rgba(152, 62, 62, 0.527);
+}
+.security{
+    margin-left: 30px;
+    background-color: rosybrown;
+    padding: 15px 20px;
+    border: 8px solid;
+    border-radius: 100%;
+    border-color: rgba(152, 62, 62, 0.527);
+}
+.spoons{
+    margin-left: 30px;
+    background-color: rosybrown;
+    padding: 15px 20px;
+    border: 8px solid;
+    border-radius: 100%;
+    border-color: rgba(152, 62, 62, 0.527);
+}
+.home-icons p{
+    padding-top: 32px;
+    font-size: 14px;
+    color: rgba(216, 114, 50, 0.868);
+}
+.Home-title:hover{
+    padding: 30px 20px;
+}
+.cont1h-get {
+    background-color: rgba(165, 42, 42, 0.703);
+    margin-left: 8px;
+    padding:  12px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.h-get-started a{
+    transform: (1.25);
 }
