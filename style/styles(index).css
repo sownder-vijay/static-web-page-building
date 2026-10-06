@@ -112,7 +112,7 @@ a:hover{
     display: flex;
     transition: all 0.3s ease;
 }
-.clock{
+.on-time{
     background-color: rosybrown;
     padding: 15px 20px;
     border: 8px solid;
@@ -138,10 +138,13 @@ a:hover{
 .home-icons p{
     padding-top: 32px;
     font-size: 14px;
-    color: rgba(216, 114, 50, 0.868);
+    color: rgba(143, 49, 23, 0.795);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .Home-title:hover{
-    padding: 30px 20px;
+    padding-right: 30px;
+    transform:scaleY(1.01);
 }
 .cont1h-get {
     background-color: rgba(165, 42, 42, 0.703);
@@ -150,6 +153,44 @@ a:hover{
     border-radius: 10px;
     transition: all 0.3s ease;
 }
-.h-get-started a{
-    transform: (1.25);
+.h-get-started:hover a{
+    transform: scale(1.25);
+    border-radius: 30px;
+}
+.h-get-started p{
+    padding-top: 10px;
+    font-size: 12px;
+    color: rgba(165, 42, 42, 0.785);
+}
+.home-footer{
+    background-color: #2c563ae0;
+    height: 100%;
+}
+.home-footer p{
+    font-weight: 200;
+    font-family: Readex pro;
+    font-size: 13px;
+}
+.logo{
+    margin-top: 30px;
+    background-color: brown;
+    width: 250px;
+    height: 60px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.logo h2 ,p{
+    padding-top: 4px;
+    margin-left: 30px;
+    color: white;
+    font-family: Readex Pro;
+}
+.copyright{
+    color: aliceblue;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.home-container-1{
+    display: flex;
 }
