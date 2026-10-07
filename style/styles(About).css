@@ -13,6 +13,16 @@ a{
 a:hover{
     color: #e2ded6ac;
 }
+hr{
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    width: 98%;
+    margin-left: 13px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
 .home-nav{
     padding: 5px 5px;
     background-color: #ebe4d8;
@@ -78,3 +88,91 @@ a:hover{
     /* padding: 12px 14px; */
     transform: scale(1.06)
 }
+.home-footer{
+    background-color: #2c563ae0;
+    height: 100%;
+}
+.home-footer p{
+    font-weight: 200;
+    font-family: Readex pro;
+    font-size: 13px;
+}
+.f-container{
+    display:flex;
+}
+.home-container-1{
+    display: flex;
+}
+.cont-elements{
+    font-family: readex pro;
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 200;
+}
+.cont-elements h3{
+    color: rgb(246, 224, 224);
+    margin-bottom: 8px;
+}
+.cont-elements li{
+    list-style: none;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 1.8;
+}
+.cont-elements a:hover{
+    color: rgba(89, 14, 14, 0.71);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+
+}
+.f-elements{
+    display: flex;
+    margin-left: 400px;
+    margin-top: 30px;
+    padding: 0px;
+}
+.logo{
+    display: flex;
+    margin-top: 20px;
+    background-color: brown;
+    margin-left: 40px;
+    border-radius: 10px;
+    padding: 12px 20px;
+    width : 350px;
+    height: 110px;
+    border: 0px solid transparent;
+    box-shadow: 2px 2px 2px rgba(76, 29, 21, 0.667);
+    
+
+}
+.logo-text{
+    margin-top: 30px;
+    margin-left: 12px;
+    font-family: readex pro;
+    color: rgb(252, 251, 251);
+}
+.logo-text p{
+    font-weight: 200;
+}
+.logo video{
+    border: 4px white solid;
+    border-radius: 100%;
+
+}
+.app-icon{
+    margin-top: 6px;
+    display: flex;
+}
+.app-icon p{
+    margin-left: 8px;
+    margin-top: 13px;
+}
+.copy{
+    margin: 0px 20px;
+    color: aliceblue;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
