@@ -3,9 +3,9 @@
     padding: 0;
     border: 0;
 }
-body{
+/* body{
     background-color: #fee5cd;
-}
+} */
 a{
     text-decoration: none;
     color: #faf9f7cb;
@@ -31,7 +31,7 @@ hr{
     justify-content: space-evenly;
     align-items: center;
     padding: 0px 32px;
-    box-shadow: 4px 2px 5px 6px #ded6ca;
+    box-shadow: 4px 2px 5px 6px #ded6cad2;
 }
 .logo-img{
     border-radius: 30px;
@@ -62,6 +62,7 @@ hr{
 .page-link:hover ol{
     padding: 15px 25px;
     border-radius: 15px;
+    background-image: linear-gradient(to right, #2c563ae0, #3a6d4ac7);
     border: 4px solid rgb(196, 188, 188);
 }
 .page-link a:link{
@@ -88,6 +89,7 @@ hr{
     transform: scale(1.06)
 }
 .Home-title{
+    border: 10px;
     margin-top: 25px;
     margin-left: 20px;
     padding-left: 20px;
@@ -101,6 +103,8 @@ hr{
     background-color: rgba(218, 185, 185, 0.445);
     font-family: Readex Pro;
     color: rgba(145, 71, 71, 0.975);
+    height: 520px;
+    padding-right: 10px;
     transition: all 0.3s ease;
 }
 .Home-title h1{
@@ -151,11 +155,18 @@ hr{
     margin-left: 10px;
     margin-right: 10px;
 }
+.Home-image{
+    position: absolute;
+    left: 740px;
+    margin-left: 20px;
+    margin-top: 30px;
+    /* border: 0px solid white; */
+}
 .Home-title:hover{
-    padding-right: 20px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    transform:scale(1.01)
+    padding-right: 30px;
+    padding-bottom: 23px;
+    margin-bottom: 0px;
+    transition: all 0.3s ease;
 }
 .cont1h-get {
     background-color: rgba(165, 42, 42, 0.703);
@@ -167,6 +178,7 @@ hr{
 .h-get-started:hover a{
     transform: scale(1.25);
     border-radius: 30px;
+
 }
 .h-get-started p{
     padding-top: 10px;
@@ -174,8 +186,9 @@ hr{
     color: rgba(165, 42, 42, 0.785);
 }
 .home-footer{
-    background-color: #2c563ae0;
+    background-image: linear-gradient(to right, #2c563a, #3a6d4ae0);
     height: 100%;
+    box-shadow: 0px 2px 4px 4px rgb(68, 66, 66);
 }
 .home-footer p{
     font-weight: 200;
@@ -187,6 +200,10 @@ hr{
 }
 .home-container-1{
     display: flex;
+    background-color: #fee5cd;
+    padding: 10px;
+    padding-bottom: 30px;
+    background-image: linear-gradient(to left, #fee5cd,#e8ddd1);
 }
 .cont-elements{
     font-family: readex pro;
@@ -218,6 +235,105 @@ hr{
     margin-top: 30px;
     padding: 0px;
 }
+/* section-2 */
+.container-2{
+    background-color: rgba(223, 61, 61, 0.788);
+    font-family: Readex Pro;
+    padding: 28px;
+}
+.sec-2-title h3{
+    color: white;
+}
+.sec-2-title h1{
+    color: rgba(100, 16, 20, 0.74);
+    padding-top: 10px;
+}
+.sec-2-title p{
+    color: white;
+    font-weight: 200;
+    font-size: 13px;
+    padding-top: 2px; 
+    padding-bottom: 10px;
+}
+.card-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding-bottom: 20px;
+}
+
+.card-1-elements {
+  /* Set explicit, equal width and height */
+  width: 160px;
+  height: 160px;
+  
+  /* Centers the content inside the circle */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 10px;
+  background-color: rgba(114, 21, 21, 0.217);
+  border-radius: 100%; /* Makes it a perfect circle when width == height */
+  box-shadow: 0px 1px 1px 1px rgba(137, 5, 5, 0.221);
+  transition: all 0.5s ease;
+}
+.card-1-title{
+    text-align: center;
+    font-family: poppins;
+    color: white;
+    font-size: 14px;
+}
+.card-1-title:hover{
+    cursor: default;
+}
+.card-1-elements:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 4px 4px 4px rgba(137, 5, 5, 0.219);
+}
+/* section-3 */
+.container-3{
+    background-color: #efe8db;
+}
+.cont3-element{
+    display: flex;
+    padding-top: 20px;
+}
+.cont3-side{
+    width: 400px;
+    font-family: poppins;
+    padding: 25px;
+}
+.cont3-side h1{
+    color:green;
+}
+.cont3-side p{
+    text-align: justify;
+    font-family: readex pro;
+    font-weight: 300;
+    line-height: 1.5;
+    color: rgba(144, 89, 44, 0.769);
+}
+.cont3-elements{
+    width: 200px;
+    margin: 25px;
+    text-align: center;
+    padding: 20px;
+    font-family: poppins;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 2px rgba(128, 128, 128, 0.587);
+    transition: all 0.3s ease;
+}
+.cont3-elements:hover{
+    transform: scale(1.08);
+}
+.cont3-elements p{
+    font-weight: 400;
+    font-size: 14px;
+}
 .logo{
     display: flex;
     margin-top: 20px;
@@ -229,8 +345,7 @@ hr{
     height: 110px;
     border: 0px solid transparent;
     box-shadow: 2px 2px 2px rgba(76, 29, 21, 0.667);
-    
-
+    transition: all 0.5s ease;
 }
 .logo-text{
     margin-top: 30px;
@@ -245,6 +360,10 @@ hr{
     border: 4px white solid;
     border-radius: 100%;
 
+}
+.logo:hover{
+    transform: scale(1.05);
+    box-shadow: 4px 4px 4px rgba(76, 29, 21, 0.667);
 }
 .app-icon{
     margin-top: 6px;
