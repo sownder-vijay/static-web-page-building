@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -85,7 +85,6 @@ hr{
     transition: all 0.3s ease;
 }
 .get-started:hover{
-    /* padding: 12px 14px; */
     transform: scale(1.06)
 }
 .Home-title{
@@ -163,7 +162,7 @@ hr{
     /* border: 0px solid white; */
 }
 .Home-title:hover{
-    padding-right: 30px;
+    padding-right: 15px;
     padding-bottom: 23px;
     margin-bottom: 0px;
     transition: all 0.3s ease;
@@ -237,6 +236,7 @@ hr{
 }
 /* section-2 */
 .container-2{
+    text-align: center;
     background-color: rgba(223, 61, 61, 0.788);
     font-family: Readex Pro;
     padding: 28px;
@@ -261,30 +261,21 @@ hr{
     justify-content: center;
     gap: 35px;
     padding-bottom: 20px;
+    flex-wrap: wrap;
 }
-
-.card-1-elements {
-  /* Set explicit, equal width and height */
-  width: 160px;
-  height: 160px;
-  
-  /* Centers the content inside the circle */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  margin: 10px;
-  background-color: rgba(114, 21, 21, 0.217);
-  border-radius: 100%; /* Makes it a perfect circle when width == height */
-  box-shadow: 0px 1px 1px 1px rgba(137, 5, 5, 0.221);
-  transition: all 0.5s ease;
+.card-1-elements svg {
+  width: 40px;      
+  height: 40px;     
+  display: block;   
+  margin: 0;        
 }
 .card-1-title{
     text-align: center;
     font-family: poppins;
     color: white;
     font-size: 14px;
+    margin: 0;
+    padding: 0 10px;    
 }
 .card-1-title:hover{
     cursor: default;
