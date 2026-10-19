@@ -1,11 +1,11 @@
+html{
+    scroll-behavior:smooth;
+}
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
-/* body{
-    background-color: #fee5cd;
-} */
 a{
     text-decoration: none;
     color: #faf9f7cb;
@@ -314,16 +314,22 @@ hr{
     padding: 20px;
     font-family: poppins;
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 4px 2px rgba(128, 128, 128, 0.587);
+    border-radius: 8px;
+    background-color:rgb(232, 232, 208);
+    box-shadow: 1px 1px 2px 1px rgba(128, 128, 128, 0.233);
     transition: all 0.3s ease;
 }
 .cont3-elements:hover{
-    transform: scale(1.08);
+    box-shadow: 0px 0px 0px 3px rgba(128, 128, 128, 0.45);
+    transform: scale(1.03);
 }
 .cont3-elements p{
+    color: brown;
     font-weight: 400;
     font-size: 14px;
+}
+.cont3-elements h3{
+    color: green;
 }
 .logo{
     display: flex;
@@ -370,5 +376,21 @@ hr{
     padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
+}
+/* 1. Define the entrance animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px); /* Starts slightly lower */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);    /* Slides up smoothly to its spot */
+  }
+}
+
+/* 2. Apply it to your main section wrapper or body text */
+.main-content, .video-section {
+  animation: fadeInUp 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 

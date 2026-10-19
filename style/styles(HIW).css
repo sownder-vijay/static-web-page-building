@@ -1,178 +1,144 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-body{
+ body {
     background-color: #fee5cd;
+    color: rgba(145, 71, 71, 0.975);
+    font-family: "Readex Pro", sans-serif;
 }
-a{
-    text-decoration: none;
-    color: #faf9f7cb;
+main {
+    background-color: #fee5cd;
+    padding: 20px 0px;
 }
-a:hover{
-    color: #e2ded6ac;
-}
-hr{
-    justify-content: center;
+.page-hero {
+    display: flex;
     align-items: center;
-    padding: 1px;
-    width: 98%;
-    margin-left: 13px;
-    margin-bottom: 15px;
-    background-color: white;
+    justify-content: space-around;
+    background-color: rgba(218, 185, 185, 0.445);
+    margin: 20px;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 2px rgba(231, 171, 171, 0.45);
 }
-
-.home-nav{
-    padding: 5px 5px;
-    background-color: #ebe4d8;
-    display: flex;
-    position: relative;
-    gap: 30px;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0px 32px;
-    box-shadow: 4px 2px 5px 6px #ded6ca;
+.hero-copy {
+    width: 48%;
+    padding: 15px;
 }
-.logo-img{
-    border-radius: 30px;
-}
-.index-nav-links{
-    display: flex;
-    gap: 30px;
-}
-.page-link ol{
-    padding: 15px 10px;
-    border-radius: 8px;
-    font-family: poppins;
+.eyebrow {
+    color: rgba(198, 93, 48, 0.9);
     font-size: 13px;
-    background-color: 	#2c563ae0;
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    text-decoration: none;
-    transition: all 0.3s ease;
+    margin-bottom: 12px;
+} 
+.page-hero h1 {
+    color: rgba(137, 82, 58, 0.886);
+    font-size: 42px;
+    margin-bottom: 14px;
 }
-.page-link a{
-    padding: 6px 4px;
-    border-radius: 15px;
+.page-hero h1 span {
+    color: #2c563a;
 }
-.page-link ol{
-    padding: 10px 10px;
+.lead {
+    color: rgba(145, 71, 71, 0.9);
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 22px;
 }
-.page-link:hover ol{
-    padding: 15px 25px;
-    border-radius: 15px;
-    border: 4px solid rgb(196, 188, 188);
-}
-.page-link a:link{
-    font-size: 12px;
-    transition: all 0.2s ease-in;
-}
-.page-link a:link:hover{
-    background-color: #2c563ae0;
-    border-radius: 6px;
-    font-size: 13px;
-}
-.get-started{
-    font-family: sans-serif;
-    font-size: small;
-    font-weight: 200;
-    padding: 11px 12px;
-    align-items: center;
-    background-color: #2c563ae0;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
-.get-started:hover{
-    /* padding: 12px 14px; */
-    transform: scale(1.06)
-}
-.home-footer{
-    background-color: #2c563ae0;
-    height: 100%;
-}
-.home-footer p{
-    font-weight: 200;
-    font-family: Readex pro;
-    font-size: 13px;
-}
-.f-container{
-    display:flex;
-}
-.home-container-1{
-    display: flex;
-}
-.cont-elements{
-    font-family: readex pro;
+.page-button {
+    display: inline-block;
+    background-color: rgba(165, 42, 42, 0.703);
     color: white;
-    text-decoration: none;
-    margin-left: 30px;
-    font-weight: 200;
+    padding: 12px 18px;
+    border-radius: 8px;
 }
-.cont-elements h3{
-    color: rgb(246, 224, 224);
+.page-button:hover {
+    background-color: #2c563a;
+}
+.hero-art {
+    width: 38%;
+    height: 280px;
+    background-color: #ebe4d8;
+    border: 2px solid #d6b9a8;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #2c563a;
+    font-size: 25px;
+    font-weight: 600;
+}
+.hero-art small {
+    display: block;
+    font-size: 14px;
+    color: rgba(198, 93, 48, 0.9);
+    margin-top: 10px;
+}
+.section-title {
+    text-align: center;
+    margin: 35px 20px 25px;
+}
+.section-title h2 {
+    color: #2c563a;
+    font-size: 30px;
     margin-bottom: 8px;
 }
-.cont-elements li{
-    list-style: none;
+.section-title p {
+    color: rgba(145, 71, 71, 0.85);
+    font-size: 14px;
+}
+.steps, .plans-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 18px;
+    margin: 20px 25px 35px;
+}
+.step-card, .plan-card {
+    background-color: #ebe4d8;
+    border: 1px solid #d6b9a8;
+    border-radius: 10px;
+    padding: 20px;
+    width: 25%;
+    box-shadow: 0px 2px 4px rgba(145, 71, 71, 0.12);
+}
+.step-number {
+    display: inline-block;
+    background-color: #2c563a;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+.step-card h3, .plan-card h3 {
+    color: #914747;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.step-card p, .plan-card p {
+    color: rgba(145, 71, 71, 0.85);
     font-size: 13px;
-    font-weight: 200;
     line-height: 1.8;
 }
-.cont-elements a:hover{
-    color: rgba(89, 14, 14, 0.71);
-    text-decoration: underline;
-    transition: color 0.2s ease;
-
+.step-icon {
+    font-size: 30px;
+    color: #2c563a;
+    margin-bottom: 12px;
 }
-.f-elements{
+.info-band {
     display: flex;
-    margin-left: 400px;
-    margin-top: 30px;
-    padding: 0px;
-}
-.logo{
-    display: flex;
-    margin-top: 20px;
-    background-color: brown;
-    margin-left: 40px;
+    justify-content: space-evenly;
+    gap: 20px;
+    background-color: #e8ddd1;
+    margin: 25px;
+    padding: 25px;
     border-radius: 10px;
-    padding: 12px 20px;
-    width : 350px;
-    height: 110px;
-    border: 0px solid transparent;
-    box-shadow: 2px 2px 2px rgba(76, 29, 21, 0.667);
-    
-
 }
-.logo-text{
-    margin-top: 30px;
-    margin-left: 12px;
-    font-family: readex pro;
-    color: rgb(252, 251, 251);
+.info-band div {
+    width: 30%;
+    text-align: center;
 }
-.logo-text p{
-    font-weight: 200;
+.info-band h3 {
+    color: #2c563a;
+    margin-bottom: 8px;
 }
-.logo video{
-    border: 4px white solid;
-    border-radius: 100%;
-
+.info-band p {
+    font-size: 13px;
+    line-height: 1.7;
 }
-.app-icon{
-    margin-top: 6px;
-    display: flex;
-}
-.app-icon p{
-    margin-left: 8px;
-    margin-top: 13px;
-}
-.copy{
-    margin: 0px 20px;
-    color: aliceblue;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-
