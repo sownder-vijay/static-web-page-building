@@ -88,6 +88,8 @@ hr{
     transform: scale(1.06)
 }
 .Home-title{
+    position: relative;
+    z-index: 1;
     border: 10px;
     margin-top: 25px;
     margin-left: 20px;
@@ -95,13 +97,13 @@ hr{
     padding-top: 20px;
     padding-bottom: 20px;
     width: 700px;
-    box-shadow: 0px 2px 2px 2px rgba(231, 171, 171, 0.669);
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
 }
 .Home-title{
-    background-color: rgba(218, 185, 185, 0.445);
     font-family: Readex Pro;
-    color: rgba(145, 71, 71, 0.975);
+    color: rgba(16, 65, 16, 0.975);
     height: 520px;
     padding-right: 10px;
     transition: all 0.3s ease;
@@ -116,20 +118,23 @@ hr{
 .Home-title p{
     padding-top: 2px;
     padding-left: 8px;
-    color: rgba(198, 93, 48, 0.667);
+    color: rgba(49, 18, 5, 0.893);
     line-height: 1.5;
 
 }
 .home-icons{
     display: flex;
+    border-radius: 30px;
+    padding: 12px;
     transition: all 0.3s ease;
+    background-image: linear-gradient(to right, green, rgb(3, 78, 3));
 }
 .on-time{
     background-color: rosybrown;
     padding: 15px 20px;
     border: 8px solid;
     border-radius: 100%;
-    border-color: rgba(152, 62, 62, 0.527);
+    border-color: #fff;
 }
 .security{
     margin-left: 30px;
@@ -137,7 +142,7 @@ hr{
     padding: 15px 20px;
     border: 8px solid;
     border-radius: 100%;
-    border-color: rgba(152, 62, 62, 0.527);
+    border-color: #fff;
 }
 .spoons{
     margin-left: 30px;
@@ -145,44 +150,43 @@ hr{
     padding: 15px 20px;
     border: 8px solid;
     border-radius: 100%;
-    border-color: rgba(152, 62, 62, 0.527);
+    border-color: #fff;
 }
 .home-icons p{
     padding-top: 32px;
     font-size: 14px;
-    color: rgba(143, 49, 23, 0.795);
+    color: rgb(253, 251, 250);
     margin-left: 10px;
     margin-right: 10px;
 }
-.Home-image{
-    position: absolute;
-    left: 740px;
-    margin-left: 20px;
-    margin-top: 30px;
-    /* border: 0px solid white; */
+.title{
+    background-color: rgba(255, 255, 255, 0.737);
+    padding: 30px 20px;
+    border-radius: 30px;
 }
-.Home-title:hover{
-    padding-right: 15px;
-    padding-bottom: 23px;
-    margin-bottom: 0px;
-    transition: all 0.3s ease;
+.num{
+    color: green;
 }
-.cont1h-get {
-    background-color: rgba(165, 42, 42, 0.703);
-    margin-left: 8px;
-    padding:  12px 20px;
+.h-get-started a{
+    background-color: rgb(165, 42, 42);
+    padding:  15px 25px;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
-.h-get-started:hover a{
-    transform: scale(1.25);
-    border-radius: 30px;
-
+.h-get-started{
+    position: relative;
+    text-align:center;
+    left: 900px;
 }
-.h-get-started p{
-    padding-top: 10px;
+.h-get-started a:hover{
+    color: white;
+    background-color: rgb(102, 4, 4);
+}
+.h-para p{
+    margin-left: 20px;
+    padding: 12px;
     font-size: 12px;
-    color: rgba(165, 42, 42, 0.785);
+    color: rgba(165, 42, 42, 0.973);
 }
 .home-footer{
     background-image: linear-gradient(to right, #2c563a, #3a6d4ae0);
@@ -197,12 +201,27 @@ hr{
 .f-container{
     display:flex;
 }
+.f-elements{
+    display: flex;
+    margin-left: 400px;
+    padding-top: 8px;
+}
 .home-container-1{
     display: flex;
-    background-color: #fee5cd;
     padding: 10px;
     padding-bottom: 30px;
-    background-image: linear-gradient(to left, #fee5cd,#e8ddd1);
+    position: relative;
+    overflow: hidden;
+}
+.section-bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    z-index: 0;         
+    pointer-events: none;
 }
 .cont-elements{
     font-family: readex pro;
@@ -227,109 +246,6 @@ hr{
     transform: scaleX(1.08);
     transition: all 0.2s ease;
 
-}
-.f-elements{
-    display: flex;
-    margin-left: 400px;
-    margin-top: 30px;
-    padding: 0px;
-}
-/* section-2 */
-.container-2{
-    text-align: center;
-    background-color: rgba(223, 61, 61, 0.788);
-    font-family: Readex Pro;
-    padding: 28px;
-}
-.sec-2-title h3{
-    color: white;
-}
-.sec-2-title h1{
-    color: rgba(100, 16, 20, 0.74);
-    padding-top: 10px;
-}
-.sec-2-title p{
-    color: white;
-    font-weight: 200;
-    font-size: 13px;
-    padding-top: 2px; 
-    padding-bottom: 10px;
-}
-.card-1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 35px;
-    padding-bottom: 20px;
-    flex-wrap: wrap;
-}
-.card-1-elements svg {
-  width: 40px;      
-  height: 40px;     
-  display: block;   
-  margin: 0;        
-}
-.card-1-title{
-    text-align: center;
-    font-family: poppins;
-    color: white;
-    font-size: 14px;
-    margin: 0;
-    padding: 0 10px;    
-}
-.card-1-title:hover{
-    cursor: default;
-}
-.card-1-elements:hover{
-    transform: scale(1.05);
-    box-shadow: 0px 4px 4px 4px rgba(137, 5, 5, 0.219);
-}
-/* section-3 */
-.container-3{
-    background-color: #efe8db;
-}
-.cont3-element{
-    display: flex;
-    padding-top: 20px;
-}
-.cont3-side{
-    width: 400px;
-    font-family: poppins;
-    padding: 25px;
-}
-.cont3-side h1{
-    color:green;
-}
-.cont3-side p{
-    text-align: justify;
-    font-family: readex pro;
-    font-weight: 300;
-    line-height: 1.5;
-    color: rgba(144, 89, 44, 0.769);
-}
-.cont3-elements{
-    width: 200px;
-    margin: 25px;
-    text-align: center;
-    padding: 20px;
-    font-family: poppins;
-    background-color: white;
-    border-radius: 8px;
-    background-color:rgb(232, 232, 208);
-    box-shadow: 1px 1px 2px 1px rgba(128, 128, 128, 0.233);
-    transition: all 0.3s ease;
-}
-.cont3-elements:hover{
-    box-shadow: 0px 0px 0px 3px rgba(128, 128, 128, 0.45);
-    transform: scale(1.03);
-}
-.cont3-elements p{
-    color: brown;
-    font-weight: 400;
-    font-size: 14px;
-}
-.cont3-elements h3{
-    color: green;
 }
 .logo{
     display: flex;
@@ -377,20 +293,149 @@ hr{
     display: flex;
     justify-content: space-between;
 }
-/* 1. Define the entrance animation */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(15px); /* Starts slightly lower */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);    /* Slides up smoothly to its spot */
-  }
+
+/* ===== MEAL BENEFITS SECTION ===== */
+
+.meal-benefits {
+  padding: 90px 7%;
+  background: #fffaf5;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* 2. Apply it to your main section wrapper or body text */
-.main-content, .video-section {
-  animation: fadeInUp 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+.benefits-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1.5fr;
+  align-items: center;
+  gap: 65px;
 }
 
+/* Introduction */
+
+.benefits-intro {
+  max-width: 400px;
+}
+
+.section-tag {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #33804b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.benefits-intro h2 {
+  margin: 0 0 22px;
+  color: #242a25;
+  font-size: clamp(32px, 3.2vw, 46px);
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.benefits-intro h2 span {
+  display: block;
+  color: #32804a;
+}
+
+.benefits-intro > p {
+  margin: 0 0 26px;
+  color: #77766f;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.benefits-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #32804a;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid #32804a;
+  padding-bottom: 7px;
+  transition: gap 0.25s ease;
+}
+
+.benefits-link:hover {
+  gap: 19px;
+}
+
+/* Feature Grid */
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.benefit-card {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #f0eae2;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(48, 68, 44, 0.09);
+}
+
+/* Images */
+
+.benefit-image {
+  position: relative;
+  height: 165px;
+  overflow: hidden;
+  background: #e9eee4;
+}
+
+.benefit-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.benefit-card:hover .benefit-image img {
+  transform: scale(1.02);
+}
+
+.benefit-number {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  color: #2d7041;
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Card Content */
+
+.benefit-content {
+  padding: 21px 20px 24px;
+}
+
+.benefit-content h3 {
+  margin: 0 0 10px;
+  color: #2e7544;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.benefit-content p {
+  margin: 0;
+  color: #77766f;
+  font-size: 13px;
+  line-height: 1.8;
+}
