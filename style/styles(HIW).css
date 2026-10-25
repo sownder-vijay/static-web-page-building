@@ -158,6 +158,276 @@ main {
     line-height: 1.6;
 }
 
+/* tracking-section */
+/* Head */
+.track-head{
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    background-color: rgba(206, 164, 164, 0.338);
+    border-radius: 10px;
+    text-align: center;
+}
+.track-head span{
+    font-family: readex pro;
+    color: brown;
+    letter-spacing: 4px;
+}
+.track-head h1{
+    font-family: readex pro;
+    color: rgb(5, 74, 5);
+
+}
+.track-head p{
+    font-family: readex pro;
+    color: rgb(75, 69, 69);
+}
+
+.track-step{
+    margin-top: 25px;
+    padding-top: 1vw;
+    padding-bottom: 1vh;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: rgba(206, 164, 164, 0.338);
+    border-radius: 10px;
+}
+.tnum span{
+    color: white;
+    padding: 8px;
+    background-color: green;
+    border-radius: 50%;
+}
+.tnum{
+    line-height: 1.5;
+}
+.tnum-cont{
+    margin-top: 8px;
+}
+/* Three Cards Container */
+.t-details-cards {
+    display: flex;
+    gap: 20px;
+    margin: 28px;
+    align-items: stretch;
+}
+
+/* Common Card Style */
+.order-details,
+.d-progress,
+.est-delivery {
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 0;
+}
+
+/* Order Details */
+.order-details h3 {
+    margin: 5px;
+    color: red;
+    font-family: readex pro;
+}
+
+.order-details hr {
+    padding: 0.6px;
+    background-image: linear-gradient(to left, rgba(228, 218, 218, 0.587), grey);
+    margin: 0;
+    margin-top: 4px;
+}
+
+.order-detail {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+    line-height: 1.9;
+    padding: 16px 5px;
+}
+
+.order-label {
+    width: 35%;
+    flex-shrink: 0;
+}
+
+.order-value {
+    flex: 1;
+    min-width: 0;
+}
+
+.order-label p,
+.order-value p {
+    margin: 0 0 8px;
+    overflow-wrap: anywhere;
+}
+
+/* Delivery Progress */
+.d-progress h3 {
+    margin: 5px;
+    color: red;
+    font-family: readex pro;
+}
+
+.d-progress hr {
+    padding: 0.8px;
+    background-image: linear-gradient(to left, rgba(228, 218, 218, 0.587), grey);
+    margin: 0;
+    margin-top: 4px;
+}
+
+.track-video {
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.t-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Estimated Delivery */
+.est-delivery h3 {
+    margin: 5px;
+    color: red;
+    font-family: readex pro;
+}
+
+.est-delivery hr {
+    padding: 0.8px;
+    background-image: linear-gradient(to left, rgba(228, 218, 218, 0.587), grey);
+    margin: 0;
+    margin-top: 4px;
+}
+
+/* Estimated Time */
+.estd-time {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin: 10px 0;
+    gap: 15px;
+    background-color: rgba(194, 239, 194, 0.475);
+    border-radius: 10px;
+}
+
+.estd-icon {
+    padding: 5px;
+    flex-shrink: 0;
+}
+
+.estd-details {
+    min-width: 0;
+}
+
+.estd-details h4 {
+    color: black;
+    font-family: readex pro;
+    margin: 2px;
+    font-weight: 500;
+}
+
+.estd-details h1 {
+    color: rgb(7, 59, 7);
+    font-weight: 600;
+    font-size: 25px;
+    margin: 2px;
+}
+
+.estd-details p {
+    color: rgb(86, 84, 84);
+    font-size: 13px;
+    margin: 3px;
+}
+
+/* Delivery Partner */
+.del-details {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0;
+    gap: 10px;
+}
+
+.del-icon {
+    padding: 5px;
+    flex-shrink: 0;
+}
+
+.del-part {
+    padding: 5px;
+    flex: 1;
+    min-width: 0;
+    font-family: readex pro;
+}
+
+.del-part p {
+    margin: 2px;
+    color: black;
+    font-weight: 400;
+}
+
+.part-name {
+    margin: 2px;
+    color: rgb(2, 39, 2);
+}
+
+.part-info {
+    margin: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgb(81, 79, 79);
+}
+
+.estd-contact {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.call,
+.msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: rgba(211, 236, 245, 0.856);
+    border-radius: 50%;
+}
+
+.call img,
+.msg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .t-details-cards {
+        flex-direction: column;
+        margin: 20px 0;
+        gap: 18px;
+    }
+
+    .order-details,
+    .d-progress,
+    .est-delivery {
+        width: 100%;
+    }
+}
 /* Three service benefits */
 .hiw-benefits {
     display: grid;
@@ -173,6 +443,7 @@ main {
     display: flex;
     align-items: center;
     gap: 12px;
+    justify-content: center;
 }
 
 .hiw-benefit-icon {
@@ -185,13 +456,11 @@ main {
     font-size: 14px;
     margin: 0 0 5px;
 }
-
 .hiw-benefit p {
     color: #806b66;
     font-size: 12px;
     margin: 0;
 }
-
 /* Bottom message and button */
 .hiw-cta {
     display: flex;

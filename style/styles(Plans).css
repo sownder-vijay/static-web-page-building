@@ -25,6 +25,9 @@ main {
     color: rgba(198, 93, 48, 0.9);
     font-size: 13px;
     margin-bottom: 12px;
+}
+.trust-line{
+    margin-top: 20px;
 } 
 .page-hero h1 {
     color: rgba(137, 82, 58, 0.886);
@@ -83,44 +86,7 @@ main {
     color: rgba(145, 71, 71, 0.85);
     font-size: 14px;
 }
-.steps, .plans-list {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: stretch;
-    gap: 18px;
-    margin: 20px 25px 35px;
-}
-.step-card, .plan-card {
-    background-color: #ebe4d8;
-    border: 1px solid #d6b9a8;
-    border-radius: 10px;
-    padding: 20px;
-    width: 25%;
-    box-shadow: 0px 2px 4px rgba(145, 71, 71, 0.12);
-}
-.step-number {
-    display: inline-block;
-    background-color: #2c563a;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 50%;
-    margin-bottom: 12px;
-}
-.step-card h3, .plan-card h3 {
-    color: #914747;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-.step-card p, .plan-card p {
-    color: rgba(145, 71, 71, 0.85);
-    font-size: 13px;
-    line-height: 1.8;
-}
-.step-icon {
-    font-size: 30px;
-    color: #2c563a;
-    margin-bottom: 12px;
-}
+
 .info-band {
     display: flex;
     justify-content: space-evenly;
@@ -142,45 +108,151 @@ main {
     font-size: 13px;
     line-height: 1.7;
 }
+/* MAIN SECTION */
+.plans-section {
+    padding: 50px 5%;
+    background-color: #faf8f5;
+    font-family: readex pro;
+}
+
+/* ALL PLAN CARDS */
+.plans-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* INDIVIDUAL CARD */
 .plan-card {
-    width: 30%;
-    padding: 24px;
+    background-color: #ffffff;
+    border: 3px solid #e5e0da;
+    border-radius: 10px;
+    padding: 25px;
+    width: 23%;
+    min-width: 220px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
 }
-.plan-card.popular {
-    border: 3px solid rgba(198, 93, 48, 0.75);
+
+/* CARD HOVER */
+.plan-card:hover {
+    border-color: #c66b64;
 }
-.plan-label {
-    color: rgba(198, 93, 48, 0.95) !important;
-    font-size: 12px !important;
-    margin-bottom: 8px;
+
+/* ICON */
+.plan-icon {
+    color: #66776a;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
-.price {
-    color: #2c563a;
-    font-size: 30px;
-    font-weight: 600;
-    margin: 14px 0px;
+
+/* SMALL LABEL */
+.plan-type {
+    color: #a45d52;
+    font-size: 11px;
+    margin-bottom: 10px;
 }
-.price small {
-    font-size: 12px;
-    font-weight: 400;
+
+/* PLAN NAME */
+.plan-card h2 {
+    color: #68433f;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
-.plan-card ul {
-    list-style: none;
-    margin: 18px 0px;
-}
-.plan-card li {
-    color: rgba(145, 71, 71, 0.9);
+
+/* DESCRIPTION */
+.plan-description {
+    color: #777;
     font-size: 13px;
-    line-height: 2.2;
+    line-height: 1.6;
+    min-height: 42px;
 }
-.plan-card li span {
-    color: #2c563a;
-    font-weight: 700;
-    margin-right: 7px;
+
+/* PRICE */
+.plan-price {
+    color: #3f5942;
+    font-size: 25px;
+    margin: 20px 0;
 }
-.plan-note {
-    text-align: center;
-    color: rgba(145, 71, 71, 0.8);
+
+.plan-price span {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+/* DIVIDER */
+.plan-card hr {
+    border: none;
+    border-top: 1px solid #e5e0da;
+    margin-bottom: 20px;
+}
+
+/* FEATURES */
+.plan-card ul {
+    padding-left: 18px;
+    margin-bottom: 25px;
+}
+
+.plan-card li {
+    color: #555;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* BUTTON */
+.plan-card a {
+    display: inline-block;
+    background-color: #b94f55;
+    color: white;
+    text-decoration: none;
+    padding: 11px 14px;
+    border-radius: 6px;
     font-size: 12px;
-    margin: 0px 20px 25px;
+}
+
+.plan-card a:hover {
+    background-color: #963c42;
+}
+
+/* STANDARD PLAN HIGHLIGHT */
+.standard-plan {
+    border: 2px solid #c66b64;
+}
+
+/* POPULAR LABEL */
+.popular-label {
+    color: #a45d52;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+/* ONE-DAY PLAN */
+.oneday-plan {
+    border: 2px solid #d6b49b;
+    transition: all 0.3s ease;
+}
+.oneday-plan:hover{
+    border: 4px solid #c66b64;
+}
+.compare-points{
+    display: flex;
+    margin: 40px;
+    gap: 10px;
+}
+.button-dark{
+    margin-top: 25px;
+    width: 8%;
+    height: 4%;
+    padding: 8px;
+    background-color: green;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.button-dark:hover{
+    color: rgba(255, 255, 255, 0.84);
+    background-color: rgb(4, 92, 4);
+    transform: scale(1.02);
 }
