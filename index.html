@@ -5,81 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect2Home</title>
 
-<!-- CSS -->
+    <!-- External css file linking -->
     <link rel="stylesheet" href="asstes/css/index.css">
 
-<!-- GOOGLE FONTS -->
+    <!-- Google font readex pro links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- NAVIGATION BAR -->
-    <nav class="home-nav">
-        <!-- logo container -->
-        <div class = "logo-img">
-            <a href = "index.html" alt="Illam2Office"><img src="asstes/image/nav-logo.png" width="250px"  height="80px"></a>
+    <!-- NAVIGATION BAR -->
+    <nav class="home-nav">        
+        <!-- logo container, on click redirection to index.html(Home page)-->
+        <div>
+            <a href = "index.html" alt="Illam2Office">
+                <img src="asstes/image/nav-logo.png" width="250px"  height="80px">
+            </a>
         </div> 
         
         <!-- links container -->
-        <div class = "page-link">
-            <ol>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="hiw.html">How it Works</a></li>
-                <li><a href="plans.html">Plans</a></li>
-                
-                <li><a href="contact.html">Contact</a></li>
-            </ol>
+        <div class="page-link-holder">
+            <!-- navigation-page-link -->
+            <div class = "page-link">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hiw.html">How it Works</a></li>
+                    <li><a href="plans.html">Plans</a></li>    
+                    <li><a href="contact.html">Contact</a></li>
+                </ol>
+            </div>
+            
+            <!-- getstarted-button -->
+            <div class = "get-started">
+                <a href ="plans.html">GET STARTED</a>
+            </div>
         </div>
-        
-        <!-- button-container -->
-        <div class = "get-started">
-            <a href ="plans.html">Get Started</a>
-        </div>
-
     </nav>
-<!--Home section-->
-    <section class="home-container-1">
-        <!--Video-->>
+
+    <!--Home section-->
+    <section class="home-container-1">        
+        <!--home-video.mp4-->
         <video autoplay muted loop playsinline class="section-bg-video">
         <source src="asstes/video/home-video.mp4" type="video/mp4">
         </video>
-        
+        <!-- title-card -->
         <div class="Home-title">
             <div class="title">
-            <h2>Your Home Food,</h2>
-            <h1>Our Journey</h1>
-                <p>Reliable home-to-office lunch delivery</p>
-                <p>based on the trusted dabbawala model.</p>
+                <h2>Your Home Food,</h2>
+                <h1>Our Journey</h1>
+                <p>Reliable Home To Your Place Lunch Delivery Service</p>
+                <p>Created to Deliver Your Food On Time</p>
             </div>
-            <br><br><br><br>
             <!-- Home-icon-section -->
-            <div class="home-icons">
-                <div class="on-time">
-                    <img src="  asstes\icons\home-delivery.svg" alt="clock" width="50px" height="50px">
+             <div class="home-icons">
+                <div class="homeicons">
+                    <img src="asstes\icons\home-delivery.svg" alt="clock" width="50px" height="50px">
                 </div>
                 <p>On Time<br>Delivery</p>
-                <div class = "security">
-                    <img src="  asstes\icons\home-shield.svg" alt="security" width="50px" height="50px">
+                <div class = "homeicons">
+                    <img src="asstes\icons\home-shield.svg" alt="security" width="50px" height="50px">
                 </div>
                 <p style = "padding-top: 18px">Safe &<br>Secure<br>Handling</p>
-                <div class ="spoons">
-                    <img src="  asstes\icons\home-food.svg" alt="Spoons" width="50px" height="50px">
+                <div class ="homeicons">
+                    <img src="asstes\icons\home-food.svg" alt="Spoons" width="50px" height="50px">
                 </div>
                 <p>On Time<br>Delivery</p>
             </div>
+
             <div class="h-para">
-             <p>From Your Home &rArr; To Your Office</p>
+             <p>From Your Home &rArr; To Your Place</p>
             </div>
             <br><br>  
-            <div class = "h-get-started">
+        </div>
+        <div class = "h-get-started">
                 <a href="Plans.html"class="cont1h-get">Get Started</a>
                 <br><br>               
-            </div>
         </div>
         
     </section>
-   
+
     <section class="meal-benefits" id="about">
         <div class="benefits-container">
         <!-- Section Introduction -->
@@ -154,8 +158,9 @@
                         <p>Your Home Food, Our Journey</p>
                     </div>
             </div>
-            <!-- QUICK-LINKS-SECTION -->
+            
         <div class="f-elements">
+                    <!-- QUICK-LINKS-SECTION -->
                     <div class="cont-elements">
                         <h3>Quick Links</h3>
                         <ol>
@@ -183,17 +188,17 @@
                         
                         <div class="app-icon">
                             <img src="asstes/image/foot-instagram.png" alt="instagram" width="40px" height="40px">
-                            <p>_connect_2_home_</p>
+                            <a href="https://www.instagram.com/_connect_2_home_?xtok=anVmcW5oYzNpZWRv"><p>_connect_2_home_</p></a>
                         </div>
                         
                         <div class="app-icon">
                             <img src="asstes/image/foot-whatsapp.png" alt="Whatsapp" width="40px" height="40px">
-                            <p>7845296179</p>
+                            <a href="https://web.whatsapp.com/"><p>7845296179</p></a>
                         </div>
                         
                         <div class="app-icon">
                             <img src="asstes/image/foot-facebook.png" alt="Facebook" width="40px" height="40px">
-                            <p>_connect_2_home_</p>
+                            <a href="https://www.facebook.com/profile.php?id=61596277282783"><p>_connect_2_home_</p></a>
                         </div>
                     </div>
                 </div>
@@ -202,9 +207,7 @@
         <hr>
        <div class="copy">
         <p>&copy; Connect2Home 2026 all rights received.</p>
-        <p>A smarter way to carry home food.</p>
         </div>
     </footer>
-    
 </body>
 </html>

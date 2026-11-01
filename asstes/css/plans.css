@@ -11,7 +11,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(218, 185, 185, 0.445);
+    background-color: #e5e0dabe;
     margin: 20px;
     padding: 28px;
     border-radius: 10px;
@@ -56,7 +56,7 @@ main {
 .hero-art {
     width: 38%;
     height: 280px;
-    background-color: #ebe4d8;
+    background-color: #e4d6bd;
     border: 2px solid #d6b9a8;
     border-radius: 10px;
     display: flex;
@@ -67,11 +67,10 @@ main {
     font-size: 25px;
     font-weight: 600;
 }
-.hero-art small {
-    display: block;
-    font-size: 14px;
-    color: rgba(198, 93, 48, 0.9);
-    margin-top: 10px;
+.hero-art img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
 }
 .section-title {
     text-align: center;
@@ -95,6 +94,7 @@ main {
     margin: 25px;
     padding: 25px;
     border-radius: 10px;
+    box-shadow: 1px 1px 0px 2px rgba(165, 42, 42, 0.148);
 }
 .info-band div {
     width: 30%;
