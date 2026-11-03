@@ -147,7 +147,7 @@
 .cont-img{
     margin: 10px;
     padding: 10px;
-    background-image: linear-gradient(to left, #8C7562,#8c7562e4);
+    background-image: linear-gradient(to left, white, aliceblue);
     border-radius: 50%;
     border: 5px solid rgb(216, 154, 154);
     box-shadow: 1px 1px 1px 1px #A6A8C5;
@@ -311,4 +311,21 @@
 .f-container{
     padding-top: 10px;
 }
-
+.cont-go-up{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 1px 2px 0px 2px rgb(241, 217, 217);
+    transition: all 0.3s ease;
+}
+.cont-go-up:hover{
+    background-color: rgb(253, 238, 238);
+    transform: scaleY(1.05);
+}
+.cont-go-up a{
+    color: green;
+}

@@ -460,3 +460,22 @@ hr{
   font-size: 13px;
   line-height: 1.8;
 }
+.go-up{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 2px 28px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 1px 2px 0px 2px rgb(241, 217, 217);
+    transition: all 0.3s ease;
+}
+.go-up:hover{
+    background-color: rgb(253, 238, 238);
+    transform: scaleY(1.05);
+}
+.go-up a{
+    color: green;
+    padding: 10px;
+}
