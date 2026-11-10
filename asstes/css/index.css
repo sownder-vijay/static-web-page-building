@@ -20,6 +20,7 @@ hr{
     margin-bottom: 15px;
     background-color: white;
 }
+
 /* navingation-bar-for-all-pages */
 .home-nav{
     display: flex;
@@ -89,6 +90,16 @@ hr{
 .get-started:hover{
     transform: scale(1.06)
 }
+.home-container-1{
+    display: flex;
+    padding: 10px;
+    height: 90vh;
+    padding-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+/* home-video */
 .section-bg-video {
     position: absolute;
     inset: 0;
@@ -232,15 +243,6 @@ hr{
     display: flex;
     margin-left: 400px;
     padding-top: 8px;
-}
-.home-container-1{
-    display: flex;
-    padding: 10px;
-    height: 90vh;
-    padding-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-    
 }
 
 .cont-elements{
